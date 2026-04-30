@@ -1,0 +1,478 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+.background-verde{
+    background-color: #14424b;
+}
+
+.container{
+    max-width: 1440px;
+    padding: 0 5%;
+    margin: 0 auto;
+}
+
+/* NAVBAR */
+
+.background-verde .container nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.container nav .logo{
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+}
+
+.container nav .ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.container nav .ul li{
+    margin: 0 35px;
+    font-size: 15px;
+}
+
+.container nav .ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+.botao{
+    padding: 10px 25px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: #22d4fd;
+}
+
+
+/* HERO */
+
+main .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main-text{
+    width: 50%;
+    color: white;
+}
+
+.main-text h1{
+    font-size: 56px;
+    line-height: 60px;
+}
+
+.container .main-text span{
+    color: #22d4fd;
+}
+
+.container .main-text p{
+    margin-top: 20px;
+    font-size: 22px;
+    line-height: 30px;
+}
+
+.container .main-text div{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    gap: 8px;
+}
+
+.container .main-img{
+    width: 50%;
+}
+
+.container .main-img img{
+    width: 100%;
+}
+
+.botao-azul{
+    padding: 10px 25px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0 0 20px #6edbf97e;
+    background: linear-gradient(#6edcf9, #1c60a0);
+}
+
+.botao-vermelho{
+    padding: 10px 25px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0 0 20px #ff3e6ea8;
+    background: linear-gradient(#ff3e6e, #be2d6e);
+}
+
+/* RESULTADOS */
+
+.resultados{
+    background-color: #fa8607;
+}
+
+.resultados .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.resultados-text{
+    color: white;
+    font-size: 25.6px;
+    font-weight: 500;
+    width: 50%;
+}
+
+.resultados-numeros{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.resultados-numeros p{
+    text-align: center;
+    margin: 0 30px;
+    font-size: 20px;
+}
+
+.resultados-numeros p span{
+    font-size: 30px;
+    font-weight: 500;
+}
+
+section, footer{
+    padding: 43.2px 0;
+}
+
+/* CARDS */
+
+.diferenciais .container{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px auto;
+}
+
+.diferenciais .card{
+    width: 30%;
+    cursor: pointer;
+    padding: 30px;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+
+.diferenciais .card:hover{
+    box-shadow: 0px 10px 67px 8px #e6e6fa85;
+}
+
+.diferenciais .card img{
+    width: 60px;
+}
+
+.diferenciais .card .titulo{
+    margin: 13px 0;
+    font-weight: 600;
+}
+
+/* EMPRESA */
+
+.empresa .container{
+    display: flex;
+    align-items: center;
+}
+
+.empresa .empresa-img{
+    width: 50%;
+}
+
+.empresa .empresa-img img{
+    width: 100%;
+    border-radius: 5%;
+}
+
+.empresa .empresa-text{
+    width: 50%;
+    padding-left: 90px;
+}
+
+.empresa .empresa-text h2{
+    font-size: 40px;
+}
+
+.empresa .empresa-text p{
+    margin: 20px 0;
+    color: silver;
+}
+
+.empresa .empresa-text p b{
+    color: black;
+    font-size: 28.8px;
+}
+
+/* FOOTER */
+
+footer{
+    background-color: #14424b;
+}
+
+footer .container{
+    display: flex;
+    color: white;
+    text-align: center;
+}
+
+footer .container ul{
+    width: 25%;
+}
+
+footer .container h3{
+    margin-bottom: 16px;
+}
+
+footer .container .redes-sociais img{
+    margin-right: 5px;
+}
+
+footer .container ul > p{
+    margin-bottom: 40px;
+}
+
+footer .container li{
+    margin: 10px 0;
+    list-style: none;
+}
+
+footer .container a{
+    color: white;
+    text-decoration: none;
+}
+
+/* ============================= */
+/* RESPONSIVO - TABLET */
+/* ============================= */
+
+    @media(max-width: 1024px){
+        .background-verde .container nav{
+            flex-direction: column;
+            gap: 40px;
+        
+        }
+
+        .container nav .ul{
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .container nav .ul li{
+            margin: 0;
+            font-size: 18px;
+        }
+
+        main .container{
+            flex-direction: column;
+            text-align: center;
+            padding-top: 30px;
+            padding-bottom: 40px;
+        }
+
+        .main-text{
+            width: 100%;
+        }
+
+        .container .main-img{
+        width: 75%;
+        max-width:480px;
+        margin-top: 25px;
+        }
+
+        .main-text h1{
+            font-size: 35px;
+            line-height: 41px;
+        /*  max-width: 900px;
+            margin: 0 auto;*/
+        }
+
+    
+
+        .container .main-text p{
+            font-size: 19px;
+            line-height: 28px;
+        }
+
+        .container .main-text div{
+            justify-content: center;
+        }
+
+
+        .resultados .container{
+            flex-wrap: wrap;
+            gap: 20px;
+            text-align: center;
+        }
+
+        .resultados-text{
+            width: 100%;
+            margin-bottom: 10px;
+        }
+
+        .resultados-numeros{
+            width: 100%;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .resultados-numeros p{
+            width: 45%;
+        }
+
+        .diferenciais .container{
+        display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .diferenciais .card{
+            width: 45%;
+            text-align: center;
+        }
+
+        .empresa .container{
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        .empresa .empresa-img,
+        .empresa .empresa-text{
+            width: 70%;
+            text-align: justify;
+            max-width:480px;
+        }
+
+        .empresa .empresa-text{
+            padding-left: 0;
+        }
+
+        footer .container{
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+
+        footer .container ul{
+            width: 45%; /*divide em duas colunas o rodape*/
+        }
+
+    }
+
+
+
+/* ============================= */
+/* RESPONSIVO - CELULAR */
+/* ============================= */
+
+@media(max-width: 768px){
+       .container nav .logo{
+        font-size: 26px;
+    }
+
+      .container nav .ul{
+        gap: 12px;
+    }
+
+
+      .container nav .ul li{
+        font-size: 16px;
+    }
+
+      .main-text h1{
+        font-size: 32px;
+        line-height: 38px;
+    }
+  .container .main-text p{
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+      .container .main-text div{
+        flex-direction: column;
+    }
+ 
+    .botao-vermelho,
+    .botao-azul,
+    .botao{
+        width: 100%;
+        max-width: 260px;
+    }
+
+
+
+      .resultados .container{
+        flex-direction: column;
+        text-align: center;
+    }
+
+     .resultados-text{
+        display: none;
+    }
+
+      .resultados-numeros{
+        flex-direction: column;
+        gap: 18px;
+        margin-top: 10px;
+    }
+
+
+  .resultados-numeros p{
+        margin: 0;
+    }
+
+
+     .empresa .empresa-text h2{
+        font-size: 32px;
+    }
+
+   .empresa .empresa-text p b{
+        font-size: 22.4px;
+    }
+
+
+    /*centraliza os cards*/
+    .diferenciais .container{
+        display:flex;
+         flex-direction: column;
+        align-items:center;
+    }
+
+    /*tamanho de 90*/
+
+    .diferenciais .card{
+        width:90%;
+    }
+
+
+      footer .container{
+        flex-direction: column;
+        align-items: center;
+    }
+
+     footer .container ul{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+} /*fim do celular*/
